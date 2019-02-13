@@ -5,3 +5,5 @@ mongoose.connect("mongodb://localhost:8080/warbler", {
   keepAlive: true,
   useMongoClient: true
 });
+
+module.exports.User = require("./user");
