@@ -48,3 +48,20 @@ ul.nav.navbar-nav li {
   background: rgb(252,70,107);
   background: radial-gradient(circle, rgba(252,70,107,1) 0%, rgba(63,94,251,1) 100%);
 }
+
+/* Homepage */
+
+.home-hero {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align-last: center;
+  padding: 1 rem;
+
+}
