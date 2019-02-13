@@ -19,7 +19,8 @@ exports.signup = async function(req, res, next) {
     return res.status(200).json({
       id,
       username,
-      profileImageUrl
+      profileImageUrl,
+      token
     });
   } catch (err) {
     //see error
@@ -28,6 +29,9 @@ exports.signup = async function(req, res, next) {
       //validation failed code
       err.message = "Sorry, that username and/or email is taken";
     }
-    return next(err);
+    return next({
+      status: 400,
+      message: err.message
+    });
   }
 };
