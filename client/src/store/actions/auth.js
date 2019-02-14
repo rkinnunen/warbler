@@ -25,3 +25,10 @@ export function authUser(type, userData) {
     });
   };
 }
+
+export function logout() {
+  return dispatch => {
+    localStorage.clear();
+    dispatch(setCurrentUser({}));
+  };
+}

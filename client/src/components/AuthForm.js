@@ -21,9 +21,14 @@ class AuthForm extends Component {
   handleSubmit = e => {
     e.preventDefault();
     const authType = this.props.signUp ? "signup" : "signin";
-    this.props.onAuth(authType, this.state).then(() => {
-      console.log("logged in");
-    });
+    this.props
+      .onAuth(authType, this.state)
+      .then(() => {
+        this.props.history.push("/");
+      })
+      .catch(() => {
+        return;
+      });
   };
 
   render() {
@@ -44,7 +49,7 @@ class AuthForm extends Component {
     return (
       <div>
         <div className="row justify-content-md-center text-center">
-          <div className="col-md6">
+          <div className="col-md-4">
             <form onSubmit={this.handleSubmit}>
               <h2>{heading}</h2>
               {errors.message && (
