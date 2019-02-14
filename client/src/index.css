@@ -65,3 +65,15 @@ ul.nav.navbar-nav li {
   padding: 1 rem;
   z-index: -1;
 }
+
+/* Messages */
+
+#messages .list-group-item {
+  display: flex;
+  align-items: flex-start;
+  padding: 7px 20px 12px;
+}
+
+#message:not(.no-hover) .list-group-item:hover {
+  background-color: #e6ecf0;
+}
