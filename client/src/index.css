@@ -21,7 +21,7 @@ code {
 
 .navbar a {
   font-weight: bold;
-  color: white;
+  color: white !important;
 }
 
 .navbar a:hover {
@@ -64,6 +64,8 @@ ul.nav.navbar-nav li {
   text-align-last: center;
   padding: 1 rem;
   z-index: -1;
+  background: rgb(239,251,255);
+background: linear-gradient(90deg, rgba(239,251,255,1) 0%, rgba(28,187,255,1) 100%);
 }
 
 /* Messages */
@@ -76,4 +78,33 @@ ul.nav.navbar-nav li {
 
 #message:not(.no-hover) .list-group-item:hover {
   background-color: #e6ecf0;
+}
+
+#message-div {
+  text-align: center;
+}
+
+#new-message-input {
+  margin: 0 auto;
+  display: inline-block;
+}
+
+#new-message-btn {
+  text-align: center
+}
+
+.timeline-image {
+  border-radius: 30px;
+  height: 60px;
+  width: 60px;
+  margin: 10px 30px 10px 10px;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+a.btn.btn-danger,
+a.btn.btn-danger:hover {
+  color: white;
 }
