@@ -28,7 +28,7 @@ In the `client` folder
 
 ## Deployment
 
-Live demo running on Heroku [here](https://warbler-client.rk.herokuapp.com)
+Live demo running on Heroku [here](https://warbler-client-rk.herokuapp.com)
 
 You can login with the email of `testUser` and password `test`
 
